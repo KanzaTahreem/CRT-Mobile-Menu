@@ -27,7 +27,7 @@ header {
   color: white;
 }
 
-#desktop-nav, #desktop-nav ul {
+.hidden {
   display: none;
 }
 
@@ -278,6 +278,10 @@ li {
   cursor: pointer;
 }
 
+.menu li {
+  text-align: left;
+}
+
 .project-stacks li:hover {
   background: rgba(0, 0, 0, 0.349);
 }
@@ -416,7 +420,54 @@ textarea {
     brightness(92%) contrast(82%);
 }
 
+.menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  z-index: 100;
+  background: #3c3a39;
+  padding: 30px;
+}
+
+.menu a {
+  color: #fff;
+}
+
+.cross {
+  float: right;
+  background: transparent;
+  color: #fff;
+}
+
+.fa-envelope {
+  display: none !important;
+}
+
+/* #desktop-nav {
+  display: none;
+} */
+
 @media all and (min-width: 720px) {
+  .menu {
+    position: inherit;
+    height: inherit;
+    width: inherit;
+  }
+
+  .cross {
+    display: none;
+  }
+
+  .fa-envelope {
+    display: inherit !important;
+  }
+
+  /* #desktop-nav {
+    display: flex;
+  } */
+
   .top-social {
     flex-direction: column;
     position: absolute;
