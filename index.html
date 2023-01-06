@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/main.css" />
     <link rel="icon" href="./favicon.ico" />
+    <script src="https://kit.fontawesome.com/4a30d59e86.js" crossorigin="anonymous"></script>
     <title>Aziz Mejri - Portfolio</title>
   </head>
   <body>
@@ -14,13 +15,14 @@
       <button type="button" class="menu-bars">
         <i class="fas fa-bars"></i>
       </button>
-      <nav id="desktop-nav">
-        <ul>
+      <nav id="desktop-nav" class="hidden">
+        <ul class="menu pop-up hidden">
+          <li><button class= "cross">X</button></li>
           <li><a class="nav-link" href="#projects">Portoflio</a></li>
           <li><a class="nav-link" href="#about-me">About</a></li>
           <li>
             <a class="nav-link" href="#contact"
-              >Contact <i class="far fa-envelope"></i
+              >Contact <i class="far fa-envelope" id="env"></i
             ></a>
           </li>
         </ul>
@@ -442,5 +444,6 @@
       src="https://kit.fontawesome.com/e966a3bd22.js"
       crossorigin="anonymous"
     ></script>
+    <script src="./script/index.js"></script>
   </body>
 </html>
