@@ -441,8 +441,8 @@ textarea {
   color: #fff;
 }
 
-.fa-envelope {
-  display: none !important;
+#env {
+  display: none;
 }
 
 /* #desktop-nav {
@@ -460,8 +460,8 @@ textarea {
     display: none;
   }
 
-  .fa-envelope {
-    display: inherit !important;
+  #env {
+    display: inherit;
   }
 
   /* #desktop-nav {
