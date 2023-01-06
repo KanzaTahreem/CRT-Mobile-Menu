@@ -10,8 +10,7 @@ const toggleMenu = (showMobileMenu) => {
     close.classList.remove('hidden');
     barMenu.classList.add('hidden');
     desktopNav.classList.remove('hidden');
-  }
-  else {
+  } else {
     popUp.classList.add('hidden');
     close.classList.add('hidden');
     barMenu.classList.remove('hidden');
